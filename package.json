@@ -1,0 +1,51 @@
+{
+  "name": "typescript-101",
+  "version": "1.0.0",
+  "description": "Typescript 101",
+  "main": "index.ts",
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "lint": "npm run lint:format && npm run lint:check-types",
+    "lint:check-types": "tsc",
+    "lint:format": "eslint --quiet \"app/**/*.js\" \"app/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/henrikq/typescript-101.git"
+  },
+  "author": "Henrik Qvigstad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrikq/typescript-101/issues"
+  },
+  "homepage": "https://github.com/henrikq/typescript-101#readme",
+  "dependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.7.2",
+    "@babel/runtime": "^7.7.2",
+    "@types/node": "^12.12.11",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-resolver": "^1.1.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.4",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-unicorn": "^12.1.0",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  }
+}

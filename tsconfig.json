@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "app",
+    "lib": ["es2018"],
+    "module": "commonjs",
+    "target": "es2018",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "isolatedModules": true,
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
+}

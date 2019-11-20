@@ -1,0 +1,46 @@
+{
+  "comments": false,
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": 3,
+        "targets": {
+          "node": "12"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-runtime",
+    [
+      "@babel/plugin-proposal-object-rest-spread",
+      {
+        "useBuiltIns": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "app": "./app/app",
+          "routes": "./app/routes",
+          "bot": "./app/bot",
+          "integrations": "./app/integrations",
+          "models": "./app/models",
+          "services": "./app/services",
+          "stats": "./app/stats",
+          "logging": "./app/logging",
+          "errors": "./app/errors",
+          "takeover": "./app/takeover",
+          "types": "./app/types",
+          "utils": "./app/utils",
+          "testUtils": "./app/testUtils"
+        }
+      }
+    ]
+  ]
+}
