@@ -15,7 +15,7 @@ npm ci
 To run files, you can use `ts-node` :
 
 ```
-npx ts-node hello-world.ts
+npx ts-node src/01-hello-world.ts
 ```
 
 

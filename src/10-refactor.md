@@ -1,8 +1,9 @@
 # Refactor pat
 
-1. Pull `typescript - 8f7bc765 - basic typescript`
+1. checkout `typescript`
 2. Pick a file and rename from `.js` to `.ts`.
 3. Fix `ts`/`eslint`
+4. npm run lint
 
 Although i would use with caution
 , VSCode has a `Quick Fix...`: `Infer parameter types from usage`.
