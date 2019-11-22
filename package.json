@@ -7,7 +7,7 @@
     "build": "./scripts/build.sh",
     "lint": "npm run lint:format && npm run lint:check-types",
     "lint:check-types": "tsc",
-    "lint:format": "eslint --quiet \"app/**/*.js\" \"app/**/*.ts\"",
+    "lint:format": "eslint --quiet \"src/*.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-typescript": "^7.7.2",
     "@babel/runtime": "^7.7.2",
+    "@types/lodash": "^4.14.149",
     "@types/node": "^12.12.11",
     "@typescript-eslint/eslint-plugin": "^2.8.0",
     "@typescript-eslint/parser": "^2.8.0",
@@ -44,6 +45,8 @@
     "eslint-plugin-jest": "^23.0.4",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-unicorn": "^12.1.0",
+    "flat": "^5.0.0",
+    "lodash": "^4.17.15",
     "prettier": "^1.19.1",
     "ts-node": "^8.5.2",
     "typescript": "^3.7.2"

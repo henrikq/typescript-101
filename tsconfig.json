@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "app",
+    "baseUrl": "scr",
     "lib": ["es2018"],
     "module": "commonjs",
     "target": "es2018",
@@ -12,5 +12,5 @@
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
